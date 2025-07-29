@@ -1,33 +1,43 @@
 # onboarding-mate
 Example code for onboarding AI assistant
-Dataset used in this: 'Salesforce/wikitext', 'wikitext-2-raw-v1' from HF
+
+**📌 Information**
+This example code uses the GPT2 model from HuggingFace and the dataset "wikitext" from Salesforce as example dataset. 
+
+The Saleforces wikitext dataset is a collection of over 100 million tokens extracted from the set of verified Good and Featured articles on Wikipedia. The dataset is available under the Creative Commons Attribution-ShareAlike License. 
+
+For more information related to the dataset and its subset, please visit: https://huggingface.co/datasets/Salesforce/wikitext
+
+Please not that the example code can be run smoothly but the performance is not optimized due to random hyperparameters.
 
 **🚀 Prerequisites**
 
-To run this starter code, you will need: 
+To install this starter code, you will need: 
 
-- Pytho, pip to install
-
+- Python
+- Pip
 
 **🔧 Installation**
 
 1. Clone this repository
-2. Create an environment and install dependencies
+2. Create an environment and install dependencies. Dependencies can be listed either in requirements.txt (for local implementation) or in env.yml (for Puhti implementation). 
+
+For local usage, you can either use python virtual environment or conda environment. Example below is for python virtual environment.
 
 ```bash 
-  python3 -m venv .venv
-  source .venv/bin/activate
-  pip install -r requirements.txt
-
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-For usage on LUMI, it is recommended to use container-wrapper.
+For usage on Puhti, it is recommended to use Tykky container wrapper.
 
 ```bash
-module load LUMI
-module load lumi-containter-wrapper
+module purge
+module load tykky
 mkdir <install_dir>
 conda-containerize new --prefix <install_dir> env.yml
+export PATH="<install_dir>/bin:$PATH"
 ```
 
 **🧠 Usage**

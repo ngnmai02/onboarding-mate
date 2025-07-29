@@ -1,7 +1,7 @@
+"""
+This function is used to load the dataset from HuggingFace and save it in a format of choice (e.g. json)
+"""
 from datasets import load_dataset
-
-# use salesforce wikitext
-
 
 def main():
     # load dataset (the smallest one to test)

@@ -1,3 +1,6 @@
+"""
+This function is to set up for fine-tuned assistant bot in command line for usage
+"""
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
@@ -10,9 +13,7 @@ def main():
         question = input('> ')
         if question.lower() == 'exit':
             break
-        # inputs = tokenizer.encode(question, return_tensors='pt')
         inputs = tokenizer(question, return_tensors='pt', padding=True, truncation=True)
-        # outputs = model.generate(inputs, max_length=100, num_return_sequences=1, pad_token_id=tokenizer.eos_token_id)
         outputs = model.generate(
             input_ids=inputs['input_ids'],
             attention_mask=inputs['attention_mask'],
