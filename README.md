@@ -2,6 +2,7 @@
 Example code for onboarding AI assistant
 
 **📌 Information**
+
 This example code uses the GPT2 model from HuggingFace and the dataset "wikitext" from Salesforce as example dataset. 
 
 The Saleforces wikitext dataset is a collection of over 100 million tokens extracted from the set of verified Good and Featured articles on Wikipedia. The dataset is available under the Creative Commons Attribution-ShareAlike License. 
