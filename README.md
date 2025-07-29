@@ -9,7 +9,7 @@ The Saleforces wikitext dataset is a collection of over 100 million tokens extra
 
 For more information related to the dataset and its subset, please visit: https://huggingface.co/datasets/Salesforce/wikitext
 
-Please not that the example code can be run smoothly but the performance is not optimized due to random hyperparameters.
+Please note that the example code can be run smoothly but the performance is not optimized due to random hyperparameters.
 
 **🚀 Prerequisites**
 
