@@ -57,7 +57,7 @@ python tuning.py
 
 ## Run the Assistant
 
-To run the assistant, you will have to open an interactive shell on LUMI
+To run the assistant, you will have to open an interactive shell on Puhti
 
 ```bash
 python assistant.py
